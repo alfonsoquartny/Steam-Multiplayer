@@ -149,6 +149,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79016e07083a07249a11fd36a866aaab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LobbyNameText: {fileID: 248473410}
+  PlayerListViewContent: {fileID: 2064668500}
+  PlayerListItemPrefab: {fileID: 5751688454946094295, guid: 94e791b3d99a46a45ae57dcfc78c2fdb, type: 3}
+  LocalPlayerObject: {fileID: 0}
+  CurrentLobbyID: 0
+  PlayerItemCreated: 0
+  LocalPlayerController: {fileID: 0}
 --- !u!4 &166340414
 Transform:
   m_ObjectHideFlags: 0
@@ -532,7 +539,7 @@ MonoBehaviour:
   m_Content: {fileID: 2064668501}
   m_Horizontal: 1
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 2
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135

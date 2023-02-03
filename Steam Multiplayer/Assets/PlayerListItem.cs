@@ -68,10 +68,11 @@ public class PlayerListItem : MonoBehaviour
         if (callback.m_steamID.m_SteamID == PlayerSteamID)
         {
             PlayerIcon.texture = GetSteamImageAsTexture(callback.m_iImage);
-            else
-            {
-                return;
-            }
+          
+        }
+        else
+        {
+            return;
         }
     }
 }

@@ -26,7 +26,8 @@ public class LobbyController : MonoBehaviour
     public PlayerObjectController LocalPlayerController;
 
     //Manager
-    private CustomNetworkManager Mmanager;
+    private CustomNetworkManager manager;
+
 
     private CustomNetworkManager Manager
     {
@@ -49,6 +50,7 @@ public class LobbyController : MonoBehaviour
     public void UpdateLobbyName()
     {
         CurrentLobbyID=manager.GetComponent<SteamLobby>().CurrentLobbyID;
+
         LobbyNameText.text = SteamMatchmaking.GetLobbyData(new CSteamID(CurrentLobbyID), "name");
     }
 

@@ -25,14 +25,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3329510463520909644}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.84088, y: 0.84088, z: 0.84088}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6592161685274121748}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 64, y: 0}
@@ -103,8 +103,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4317505586812775519}
-  - {fileID: 7009986081586503773}
   - {fileID: 8739507583859897321}
+  - {fileID: 7009986081586503773}
   m_Father: {fileID: 0}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -125,6 +125,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4a92dd9831cd045867ebff249f80e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerName: 
+  ConnectionID: 0
+  PlayerSteamID: 0
+  PlayerNameText: {fileID: 8369893143275567890}
+  PlayerIcon: {fileID: 6951655917688820664}
 --- !u!1 &8045144514795785331
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,8 +165,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 267, y: 0}
-  m_SizeDelta: {x: 530.1799, y: 100}
+  m_AnchoredPosition: {x: 267, y: -3.1997}
+  m_SizeDelta: {x: 530.1799, y: 109.3994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &10655764730640152
 CanvasRenderer:
