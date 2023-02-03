@@ -56,7 +56,7 @@ public class PlayerObjectController : NetworkBehaviour
     [Command]
     private void CmdSetPlayerName(string PlayeName)
     {
-        this.PlayerNameUpdate(this.PlayerName, PlayerName);
+        this.PlayerNameUpdate(this.PlayerName, PlayeName);
     }
 
     public void PlayerNameUpdate(string oldValue, string newValue)
