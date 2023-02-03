@@ -17,16 +17,33 @@ public class PlayerListItem : MonoBehaviour
 
     protected Callback<AvatarImageLoaded_t> ImageLoaded;
 
+    public Text PlayerReadyText;
+    public bool ready;
     private void Start()
     {
         ImageLoaded = Callback<AvatarImageLoaded_t>.Create(OnImageLoaded);
     }
 
    
+    public void ChangeReadyStatus()
+    {
+        if (ready)
+        {
+            PlayerReadyText.text = "Ready";
+            PlayerReadyText.color = Color.green;
+
+        }
+        else
+        {
+            PlayerReadyText.text = "Unready";
+            PlayerReadyText.color = Color.red;
+        }
+    }
 
     public void SetPlayerValues()
     {
         PlayerNameText.text = PlayerName;
+        ChangeReadyStatus();
         if (!AvatarReceived){ GetPlayerIcon(); }
     }
 
