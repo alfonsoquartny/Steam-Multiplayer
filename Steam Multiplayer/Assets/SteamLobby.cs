@@ -18,7 +18,7 @@ public class SteamLobby : MonoBehaviour
     protected Callback<LobbyEnter_t> LobbyEntered;
 
 
-    //Variables
+    //Variables 
 
     public ulong CurrentLobbyID;
     private const string HostAdressKey = "HostAddress";
@@ -26,7 +26,8 @@ public class SteamLobby : MonoBehaviour
 
 
     //gameObject
- 
+    public GameObject hostButton;
+    public Text LobbyNameText;
 
 
     public void HostLobby()
@@ -70,8 +71,11 @@ public class SteamLobby : MonoBehaviour
     private void OnLobbyEntered(LobbyEnter_t callback)
     {
         //Everyone
-
+        hostButton.SetActive(false);
         CurrentLobbyID = callback.m_ulSteamIDLobby;
+        LobbyNameText.gameObject.SetActive(true);
+        LobbyNameText.text = SteamMatchmaking.GetLobbyData(new CSteamID(callback.m_ulSteamIDLobby), "name");
+
 
 
         //Clients

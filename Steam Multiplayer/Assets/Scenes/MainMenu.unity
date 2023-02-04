@@ -470,6 +470,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentLobbyID: 480
+  hostButton: {fileID: 197127211}
+  LobbyNameText: {fileID: 15132812}
 --- !u!114 &1242203362
 MonoBehaviour:
   m_ObjectHideFlags: 0
